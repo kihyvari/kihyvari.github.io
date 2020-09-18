@@ -153,6 +153,8 @@ Scrollbar (only chrome & safari)
     color: black;
     padding: 0 0 4px;
     border-radius: 1px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .btn:hover {
     border: 2px inset #fff;
