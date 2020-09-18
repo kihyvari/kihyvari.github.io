@@ -208,6 +208,7 @@ CARDS
     border-top-color: #fff;
     background: silver;
     color:#212529;
+    margin-bottom: 1.5em;
 }
 .card.square{
     border-radius: 0px;
