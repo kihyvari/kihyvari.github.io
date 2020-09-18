@@ -242,6 +242,11 @@ CARDS
     margin-bottom: 0.5em;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .string-about { display: none;}
+ }
+
+
 /*
 
 NAVBAR
