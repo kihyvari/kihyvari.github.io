@@ -242,9 +242,14 @@ CARDS
     margin-bottom: 0.5em;
 }
 
-@media only screen and (max-device-width: 480px) {
-    span { display: none;}
- }
+/*
+
+TODO @media only screen and (max-device-width: 480px) {}
+
+*/
+
+span { display: none;}
+ 
 
 
 /*
