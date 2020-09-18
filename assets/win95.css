@@ -247,10 +247,9 @@ CARDS
 TODO @media only screen and (max-device-width: 480px) {}
 
 */
-
-span { display: none;}
- 
-
+@media only screen and (max-device-width: 480px) {
+    span.string-about { display: none;}
+}
 
 /*
 
