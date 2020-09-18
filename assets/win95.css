@@ -247,9 +247,10 @@ CARDS
 TODO @media only screen and (max-device-width: 480px) {}
 
 */
-@media only screen and (max-device-width: 580px) {
+
+@media (min-width: 576px) { 
     .about { display: none;}
-}
+ }
 
 /*
 
