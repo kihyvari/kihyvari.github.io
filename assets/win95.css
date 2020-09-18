@@ -1,13 +1,10 @@
 /*
-
-    WIN95.CSS
+    Originally WIN95.CSS
     https://github.com/AlexBSoft/win95.css
     Author: Alex B (alex-b.me)
     License: MIT
-
-    Version: 1.1.1
-
 */
+
 html {
   position: relative;
   min-height: 100%;
@@ -238,6 +235,11 @@ CARDS
 }
 .header-inactive{
     background: gray !important;
+}
+
+.skills-p {
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
 }
 
 /*
