@@ -243,7 +243,7 @@ CARDS
 }
 
 @media only screen and (max-device-width: 480px) {
-    .string-about { display: none;}
+    span { display: none;}
  }
 
 
