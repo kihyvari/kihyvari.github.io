@@ -208,6 +208,7 @@ CARDS
     background: silver;
     color:#212529;
     margin-bottom: 1.5em;
+    margin-top: 1.5em;
 }
 .card.square{
     border-radius: 0px;
@@ -360,6 +361,10 @@ ICONS
 .icon-16-4{
     margin-bottom:4px;
     max-height: 16px;
+}
+.icon-32{
+    margin-bottom:2px;
+    max-height: 32px;
 }
 /*
 
