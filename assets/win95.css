@@ -193,6 +193,11 @@ button:focus{
     text-shadow: 1px 1px #fff;
 }
 
+.btn-secondary-lonely {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
 /*
 
 CARDS
