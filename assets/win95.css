@@ -56,6 +56,10 @@ header .container {
 .container {
     max-width: 50%;
 }
+
+.wide {
+    max-width: 100%;
+}
 /*
 
 Scrollbar (only chrome & safari)
