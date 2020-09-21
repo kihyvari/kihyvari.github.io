@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Oh no, where am I?</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <meta author="kihyvari" />
+        <meta property="og:image" content="assets/preview.png" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Oh no, where am I?</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <meta author="kihyvari" />
-    <meta property="og:image" content="assets/preview.png" />
+        <link
+            rel="shortcut icon"
+            href="assets/icons/computer-3.png"
+            type="image/png"
+        />
 
-    <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/win95.css" />
 
-    <link rel="stylesheet" type="text/css" href="assets/win95.css">
-    
-    <script> // This is a clock btw
-        function startTime() {
-          var today = new Date();
-          var h = today.getHours();
-          var m = today.getMinutes();
-          var s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =
-          h + ":" + m + ":" + s;
-          var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-        }
+        <script>
+            // This is a clock btw
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById("txt").innerHTML =
+                    h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                } // add zero in front of numbers < 10
+                return i;
+            }
         </script>
+    </head>
 
-</head>
-
-<body class="windows-scrollbar">
-
-<!--
+    <body class="windows-scrollbar">
+        <!--
     Navbar
     <nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
         <a class="navbar-brand" href="#">
@@ -71,7 +80,7 @@
 
 -->
 
-    <!-- Header
+        <!-- Header
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Yes! Wait, no!</h1>
@@ -80,28 +89,55 @@
 
    Not header -->
 
-  <div class="container">
-    <div class="card mb-4">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-normal "><img src="assets/icons/note-0.png"> About this site</h4>
-        </div>
-        <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>My name is Kimmo Hyvärinen</li>
-              <li>Welcome to my homepage</li> 
-            </ul>
-            <div class="btn-group btn-block" role="group" aria-label="Basic example">
-              <!--    <button type="button" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> Email me</button> -->
-              <a href="mailto:kihyvari@gmail.com" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"><span class="about"> kihyvari@gmail.com</span></a>
-              <!-- <a href="mailto:yourmail@domain.com">Send me an email</a> -->
-              <a href="https://www.linkedin.com/in/kimmo-hyv%C3%A4rinen/" class="btn btn-secondary"><img src="assets/icons/linkedin-1.png" class="icon-16"><span class="about"> LinkedIn</span> </a>
-              <a href="https://github.com/kihyvari" class="btn btn-secondary"><img src="assets/icons/github-1.png" class="icon-16"><span class="about"> GitHub</span> </a>
+        <div class="container">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">
+                        <img src="assets/icons/note-0.png" /> About this site
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>My name is Kimmo Hyvärinen</li>
+                        <li>Welcome to my homepage</li>
+                    </ul>
+                    <div
+                        class="btn-group btn-block"
+                        role="group"
+                        aria-label="Basic example"
+                    >
+                        <!--    <button type="button" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> Email me</button> -->
+                        <a
+                            href="mailto:kihyvari@gmail.com"
+                            class="btn btn-secondary"
+                            ><img
+                                src="assets/icons/envelope_closed-1.png"
+                                class="icon-16"
+                            /><span class="about"> kihyvari@gmail.com</span></a
+                        >
+                        <!-- <a href="mailto:yourmail@domain.com">Send me an email</a> -->
+                        <a
+                            href="https://www.linkedin.com/in/kimmo-hyv%C3%A4rinen/"
+                            class="btn btn-secondary"
+                            ><img
+                                src="assets/icons/linkedin-1.png"
+                                class="icon-16"
+                            /><span class="about"> LinkedIn</span>
+                        </a>
+                        <a
+                            href="https://github.com/kihyvari"
+                            class="btn btn-secondary"
+                            ><img
+                                src="assets/icons/github-1.png"
+                                class="icon-16"
+                            /><span class="about"> GitHub</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div>
-</div>
+        </div>
 
-<!--
+        <!--
     <div class="d-flex justify-content-center h-100 align-items-center">
         <div class="card" style="width: 60vh;">
                 <div class="card-header icon">
@@ -114,10 +150,10 @@
                   </ul>
                   <div class="btn-group btn-block" role="group" aria-label="Basic example">
                       -->
-                    <!--    <button type="button" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> Email me</button> -->
-                  <!--   <a href="mailto:kihyvari@gmail.com" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> kihyvari@gmail.com</a> -->
-                    <!-- <a href="mailto:yourmail@domain.com">Send me an email</a> -->
-                 <!--    <a href="https://www.linkedin.com/in/kimmo-hyv%C3%A4rinen/" class="btn btn-secondary"><img src="assets/icons/linkedin-1.png" class="icon-16"> LinkedIn</a>
+        <!--    <button type="button" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> Email me</button> -->
+        <!--   <a href="mailto:kihyvari@gmail.com" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> kihyvari@gmail.com</a> -->
+        <!-- <a href="mailto:yourmail@domain.com">Send me an email</a> -->
+        <!--    <a href="https://www.linkedin.com/in/kimmo-hyv%C3%A4rinen/" class="btn btn-secondary"><img src="assets/icons/linkedin-1.png" class="icon-16"> LinkedIn</a>
                     <a href="https://github.com/kihyvari" class="btn btn-secondary"><img src="assets/icons/github-1.png" class="icon-16"> GitHub</a>
                   </div>
                 </div>
@@ -125,7 +161,7 @@
       </div>
     -->
 
-<!-- maybe obsolite
+        <!-- maybe obsolite
 
     <div class="container">
         <div class="row mb-5">
@@ -154,41 +190,80 @@
 
 maybe not -->
 
-    
-
-    <div class="container wide" id="page-content">
-        <div class="card-deck mb-3 text-center">
-            <div class="card square mb-4">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">React Demo</h4>
-                </div>
-                <div class="card-body">
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li><img src="assets/icons/globe_map-0.png" class="icon-32"></li> <!--TODO-->
-                        <br>
-                        <li>Visualizes railway traffic data</li>
-                        <li>I learned about callback hell</li>
-                    </ul>
-                    <a href="https://github.com/kihyvari/bootcamp-demo" class="btn btn-secondary-lonely"><img src="assets/icons/github-1.png" class="icon-16"><span class="bad-button"> GitHub</span> </a>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Eno-seura ry. website</h4>
-                </div>
-                <div class="card-body">
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li><img src="assets/icons/web_file_set-0.png" class="icon-32">></li>
-                        <li>WIP Static site powered by Jekyll.</li>
-                        <li>Made me think how to hone my customer interface skills.</li>
-                    </ul>
-                    <div class="btn-group btn-block" role="group" aria-label="Basic example">
-                        <a href="https://github.com/Eno-seura-ry/Eno-seura_website" class="btn btn-secondary"><img src="assets/icons/github-1.png" class="icon-16"><span class="bad-button"> GitHub</span> </a>
-                        <a href="https://eno-seura-ry.github.io/Eno-seura_website/" class="btn btn-secondary"><img src="assets/icons/homepage-1.png" class="icon-16"><span class="bad-button"> Website</span> </a>
+        <div class="container wide" id="page-content">
+            <div class="card-deck mb-3 text-center">
+                <div class="card square mb-4">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">React Demo</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                <img
+                                    src="assets/icons/globe_map-0.png"
+                                    class="icon-32"
+                                />
+                            </li>
+                            <!--TODO-->
+                            <br />
+                            <li>Visualizes railway traffic data</li>
+                            <li>I learned about callback hell</li>
+                        </ul>
+                        <a
+                            href="https://github.com/kihyvari/bootcamp-demo"
+                            class="btn btn-secondary-lonely"
+                            ><img
+                                src="assets/icons/github-1.png"
+                                class="icon-16"
+                            /><span class="bad-button"> GitHub</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <!-- CARDIE
+                <div class="card square mb-4">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">
+                            Eno-seura ry. website
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                <img
+                                    src="assets/icons/web_file_set-0.png"
+                                    class="icon-32"
+                                />>
+                            </li>
+                            <li>WIP Static site powered by Jekyll.</li>
+                            <li>
+                                Made me think how to hone my customer interface
+                                skills.
+                            </li>
+                        </ul>
+                        <div
+                            class="btn-group btn-block"
+                            role="group"
+                            aria-label="Basic example"
+                        >
+                            <a
+                                href="https://github.com/Eno-seura-ry/Eno-seura_website"
+                                class="btn btn-secondary"
+                                ><img
+                                    src="assets/icons/github-1.png"
+                                    class="icon-16"
+                                /><span class="bad-button"> GitHub</span>
+                            </a>
+                            <a
+                                href="https://eno-seura-ry.github.io/Eno-seura_website/"
+                                class="btn btn-secondary"
+                                ><img
+                                    src="assets/icons/homepage-1.png"
+                                    class="icon-16"
+                                /><span class="bad-button"> Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARDIE
             <div class="card w95 mb-4">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal"> One color card</h4>
@@ -205,43 +280,61 @@ maybe not -->
                 </div>
             </div> 
             -->
-            <div class="card-deck mb-3 text-center">
                 <div class="card square mb-4">
                     <div class="card-header">
                         <h4 class="my-0 font-weight-normal">This site</h4>
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li><img src="assets/icons/globe_map-0.png" class="icon-32"></li>
-                            <br>
+                            <li>
+                                <img
+                                    src="assets/icons/globe_map-0.png"
+                                    class="icon-32"
+                                />
+                            </li>
+                            <br />
                             <li>Modern & trendy design</li>
                             <li>Responsive</li>
                             <li>Actually forked from AlexBSoft</li>
                         </ul>
-                        <a href="https://github.com/kihyvari/kihyvari.github.io" class="btn btn-secondary-lonely"><img src="assets/icons/github-1.png" class="icon-16"><span class="bad-button"> GitHub</span> </a>
+                        <a
+                            href="https://github.com/kihyvari/kihyvari.github.io"
+                            class="btn btn-secondary-lonely"
+                            ><img
+                                src="assets/icons/github-1.png"
+                                class="icon-16"
+                            /><span class="bad-button"> GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card square mb-4">
+                    <div class="card-header header-inactive">
+                        <h4 class="my-0 font-weight-normal">
+                            Hot projects TBA
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                <img
+                                    src="assets/icons/ohjelmointikielikylpy.png"
+                                    class="icon-32"
+                                />
+                            </li>
+                            <br />
+                            <li>JS & mobile apps</li>
+                            <li>C# & Unity</li>
+                            <li>Python & AI</li>
+                        </ul>
+                        <button type="button" class="btn btn-secondary-lonely">
+                            Ok
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="card mb-4">
-                <div class="card-header header-inactive">
-                    <h4 class="my-0 font-weight-normal">Hot projects TBA</h4>
-                </div>
-                <div class="card-body">
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li><img src="assets/icons/ohjelmointikielikylpy.png" class="icon-32"></li>
-                        <br>
-                        <li>JS & mobile apps</li>
-                        <li>C# & Unity</li>
-                        <li>Python & AI</li>
-                    </ul>
-                    <button type="button" class="btn btn-secondary-lonely">Ok</button>
-                </div>
-            </div>
-             
         </div>
-    </div>
 
-    <!-- Forms 
+        <!-- Forms 
 
     <div class="container">
         <div class="card mb-4">
@@ -310,7 +403,7 @@ maybe not -->
 
     forms -->
 
-    <!-- Icons 
+        <!-- Icons 
 
     <div class="container">
         <div class="card mb-4">
@@ -329,45 +422,82 @@ maybe not -->
 
     Icons -->
 
-    <!-- Progress -->
+        <!-- Progress -->
 
-    <div class="container">
-        <div class="card mb-4">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal"><img src="assets/icons/certificate-0.png"> My skills</h4>
-            </div>
-            <div class="card-body">
-                <p class="skills-p"><img src="assets/icons/web_file_set-5.png"> HTML</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="container">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">
+                        <img src="assets/icons/certificate-0.png" /> My skills
+                    </h4>
                 </div>
-                <p class="skills-p"><img src="assets/icons/bar_graph-0.png"> CSS</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> 
-                <p class="skills-p"><img src="assets/icons/script_file_teal-0.png"> JS</p>
-                <div class="progress">
-                    <div class="progress-bar " role="progressbar" style="width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
-                    <br>
-                </div>
-                <p class="skills-p"><img src="assets/icons/user_computer_pair-1.png"> UI design</p>
-                <div class="progress">
-                    <div class="progress-bar " role="progressbar" style="width: 118%" aria-valuenow="118" aria-valuemin="0" aria-valuemax="120"></div>
-                    <br>
-                </div>
-                
+                <div class="card-body">
+                    <p class="skills-p">
+                        <img src="assets/icons/web_file_set-5.png" /> HTML
+                    </p>
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 75%"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        ></div>
+                    </div>
+                    <p class="skills-p">
+                        <img src="assets/icons/bar_graph-0.png" /> CSS
+                    </p>
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 66%"
+                            aria-valuenow="66"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        ></div>
+                    </div>
+                    <p class="skills-p">
+                        <img src="assets/icons/script_file_teal-0.png" /> JS
+                    </p>
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 44%"
+                            aria-valuenow="44"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        ></div>
+                        <br />
+                    </div>
+                    <p class="skills-p">
+                        <img src="assets/icons/user_computer_pair-1.png" /> UI
+                        design
+                    </p>
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 118%"
+                            aria-valuenow="118"
+                            aria-valuemin="0"
+                            aria-valuemax="120"
+                        ></div>
+                        <br />
+                    </div>
 
-                <!--
+                    <!--
                 <br>
                 <p>Class progress-bar-blocks</p>
                 <div class="progress">
                     <div class="progress-bar progress-bar-blocks" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                -->
+                --></div>
             </div>
         </div>
-    </div>
-<!-- 
+        <!-- 
     <div class="container">
         <div class="card mb-4">
             <div class="card-header">
@@ -375,8 +505,8 @@ maybe not -->
             </div>
             <div class="card-body windows-scrollbar" style="overflow-y: scroll; height:100px;">
                 <h5>And modal:</h5> -->
-                <!-- Button trigger modal -->
-           <!--      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <!-- Button trigger modal -->
+        <!--      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Launch demo modal
                 </button>
                 <p>Click button to show modal.</p>
@@ -385,7 +515,7 @@ maybe not -->
     </div>
 -->
 
-    <!-- Modal
+        <!-- Modal
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -408,7 +538,7 @@ maybe not -->
 
     Modal -->
 
-    <!-- OTHER
+        <!-- OTHER
     <div class="container">
         <div class="card mb-4">
             <div class="card-header">
@@ -438,26 +568,48 @@ maybe not -->
 
     -->
 
-
-
-    <!-- Footer -->
-    <footer class="taskbar" onload="startTime()">
-        <div class="row" style="margin-right: 0px;">
-            <div class="col-8">
-                <a href="https://kihyvari.github.io/" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Author</a>
-                <a href="https://github.com/kihyvari" class="btn start-button"><img src="assets/icons/directory_folder_options-5.png" class="icon-16"> GitHub</a>
+        <!-- Footer -->
+        <footer class="taskbar" onload="startTime()">
+            <div class="row" style="margin-right: 0px">
+                <div class="col-8">
+                    <a
+                        href="https://kihyvari.github.io/"
+                        class="btn start-button"
+                        ><img
+                            src="assets/icons/users-1.png"
+                            class="icon-16"
+                        />Author</a
+                    >
+                    <a
+                        href="https://github.com/kihyvari"
+                        class="btn start-button"
+                        ><img
+                            src="assets/icons/directory_folder_options-5.png"
+                            class="icon-16"
+                        />
+                        GitHub</a
+                    >
+                </div>
+                <div class="col-4 time">This is not a clock</div>
+                <div id="txt"></div>
             </div>
-            <div class="col-4 time">This is not a clock</div>
-            <div id="txt"></div>
-        </div>
+        </footer>
 
-    </footer>
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-
+        <!-- Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
