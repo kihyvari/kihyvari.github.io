@@ -267,7 +267,9 @@ TODO @media only screen and (max-device-width: 480px) {}
  }
 
 @media (max-width: 768px) { 
+    .about { display: none;}
     .bad-button{ display: none;}
+    .btn { margin-left: 0; margin-right: 0;}
  }
 
 /*
