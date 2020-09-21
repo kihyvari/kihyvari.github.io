@@ -52,6 +52,10 @@ header .container {
   z-index: 2;
   padding-top: 1em;
 }
+
+.container {
+    max-width: 50%;
+}
 /*
 
 Scrollbar (only chrome & safari)
@@ -357,6 +361,7 @@ FOOTER
 }
 #page-content {
     flex: 1 0 auto;
+
 }
 /*
 
