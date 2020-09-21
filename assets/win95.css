@@ -253,6 +253,10 @@ TODO @media only screen and (max-device-width: 480px) {}
     .about { display: none;}
  }
 
+@media (max-width: 768px) { 
+    .bad-button{ display: none;}
+ }
+
 /*
 
 NAVBAR
