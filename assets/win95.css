@@ -270,7 +270,13 @@ TODO @media only screen and (max-device-width: 480px) {}
     .about { display: none;}
     .bad-button{ display: none;}
     .btn { margin-left: 0; margin-right: 0;}
+    .card-deck .card {flex: 1 0 33%;}
  }
+
+@media (max-width: 992px) { 
+    .btn { margin-left: 0.5em; margin-right: 0.5em;}
+}
+
 
 /*
 
