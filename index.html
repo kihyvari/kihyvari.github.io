@@ -13,7 +13,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="assets/win95.css">
-
+    
+    <script> // This is a clock btw
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
 
 </head>
 
@@ -148,8 +165,9 @@ maybe not -->
                 <div class="card-body">
                     <ul class="list-unstyled mt-3 mb-4">
                         <li><img src="assets/icons/globe_map-0.png" class="list-image-card"></li> <!--TODO-->
-                        <li>Visualizes railway traffic data from digitraffic.fi/api.</li>
-                        <li>I learned about callback hell.</li>
+                        <br>
+                        <li>Visualizes railway traffic data</li>
+                        <li>I learned about callback hell</li>
                     </ul>
                     <a href="https://github.com/kihyvari/bootcamp-demo" class="btn btn-secondary"><img src="assets/icons/github-1.png" class="icon-16"><span class="about"> GitHub</span> </a>
                 </div>
@@ -161,7 +179,7 @@ maybe not -->
                 <div class="card-body">
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Work in progress</li>
-                        <li>Static site made with Jekyll.</li>
+                        <li>Static site powered by Jekyll.</li>
                         <li>Made me think how to hone my customer interface skills.</li>
                     </ul>
                     <div class="btn-group btn-block" role="group" aria-label="Basic example">
@@ -198,6 +216,7 @@ maybe not -->
                         <li>C# & Unity</li>
                         <li>Python & AI</li>
                     </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Ok</button>
                 </div>
             </div>
              
@@ -404,16 +423,17 @@ maybe not -->
 
 
     <!-- Footer -->
-    <footer class="taskbar">
+    <footer class="taskbar" onload="startTime()">
         <div class="row" style="margin-right: 0px;">
             <div class="col-8">
                 <a href="//alex-b.me" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Author</a>
                 <a href="https://github.com/AlexBSoft/win95.css" class="btn start-button"><img src="assets/icons/directory_folder_options-5.png" class="icon-16"> GitHub</a>
             </div>
-            <div class="col-4 time">This is not a clock</div>
+            <div id="txt" class="col-4 time"></div>
         </div>
 
     </footer>
+
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
