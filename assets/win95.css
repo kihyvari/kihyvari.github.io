@@ -60,6 +60,10 @@ header .container {
 .wide {
     max-width: 100% !important;
 }
+
+.space-title {
+    text-align: center;
+}
 /*
 
 Scrollbar (only chrome & safari)
