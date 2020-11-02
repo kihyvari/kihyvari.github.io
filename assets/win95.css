@@ -254,7 +254,7 @@ CARDS
     background: -webkit-linear-gradient(left, #08216b, #a5cef7);
     color: #fff;
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 2px;
@@ -266,6 +266,10 @@ CARDS
 }
 .header-inactive {
     background: gray !important;
+}
+
+.card-deck {
+    justify-content: center;
 }
 
 .skills-p {
@@ -292,6 +296,9 @@ TODO @media only screen and (max-device-width: 480px) {}
 @media (max-width: 1200px) {
     .container {
         max-width: 50%;
+    }
+    .card-deck .card {
+        flex: 1 0 33%;
     }
 }
 
@@ -427,6 +434,7 @@ FOOTER
 }
 #page-content {
     flex: 1 0 auto;
+
 }
 /*
 
