@@ -283,6 +283,12 @@ TODO @media only screen and (max-device-width: 480px) {}
 
 */
 
+@media (max-width: 1400px) {
+    .card-deck .card {
+        flex: 1 0 33%;
+    }
+}
+
 @media (min-width: 1200px) {
     .btn {
         margin-left: 0.5em;
