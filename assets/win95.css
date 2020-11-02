@@ -273,6 +273,7 @@ CARDS
 }
 
 .card-deck .card {
+    flex: 1 0 33%;
     max-width: 30em;
     max-height: 30em;
 }
